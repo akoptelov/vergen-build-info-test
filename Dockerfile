@@ -1,6 +1,7 @@
 FROM rust:buster AS build
 WORKDIR /build
 COPY . .
+RUN ls -al
 RUN cargo build --release
 
 FROM debian:buster
