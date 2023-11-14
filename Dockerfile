@@ -2,6 +2,7 @@ FROM rust:buster AS build
 WORKDIR /build
 COPY . .
 RUN ls -al
+RUN cat .dockerignore
 RUN cargo build --release
 
 FROM debian:buster
