@@ -1,0 +1,12 @@
+[package]
+name = "vergen-build-info-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+vergen = { version = "8.2.6", features = ["git", "gitcl"] }
+
+[build-dependencies]
+vergen = { version = "8.2.6", features = ["git", "gitcl"] }
